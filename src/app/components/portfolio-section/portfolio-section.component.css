@@ -1,0 +1,221 @@
+.portfolio h2 {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 5rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .column {
+    flex-basis: calc(50% - 5px);
+    margin-bottom: 10px;
+  }
+  
+  .card {
+    padding: 0;
+  }
+  
+  .card img {
+    width: 100%;
+  }
+  
+  .card-content {
+    padding: 0 0.9375rem;
+  }
+  .card-content h3 {
+    font-family: 'Ysabeau SC', sans-serif;
+    font-weight: 700;
+    color: #6B3A3B;
+    font-size: 3rem;
+    letter-spacing: 0.3125rem;
+  }
+
+  .card-content p{
+    margin-top: 7rem;
+    font-family: 'Ysabeau SC', sans-serif;
+    font-weight: 400;
+    color: #6B3A3B;
+    font-size: 1.4rem;
+    text-align: justify;
+  }
+
+  .card-content button {
+    margin-top: 7rem;
+    font-family: 'Ysabeau SC', sans-serif;
+    background-color: transparent;
+    border: 0.125rem solid #6B3A3B;
+    color: #6B3A3B;
+    width:10rem ;
+    padding: 0.625rem;
+    font-size: 1rem;
+    letter-spacing: 0.125rem;
+  }
+  .card-content button:hover {
+    margin-top: 7rem;
+    font-family: 'Ysabeau SC', sans-serif;
+    background-color: #6B3A3B;
+    border: 0.0625rem solid #fff;
+    color: #fff;
+    width:10rem ;
+    padding: 0.625rem;
+    font-size: 1rem;
+    letter-spacing: 0.125rem;
+  }
+  
+  #pr1 {
+    background-image: linear-gradient(#d1b68a, #fff);
+  }
+  
+  #pr2 {
+    background-image: linear-gradient(#b8d1d1, #fff);
+  }
+  
+  #pr3 {
+    background-image: linear-gradient(#bdaaa2, #fff);
+  }
+  
+  #pr4 {
+    background-image: linear-gradient(#37526e, #fff);
+  }
+  
+
+  @media screen and (min-width: 375px) and (max-width: 480px) {
+    .row {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .portfolio h2 {
+      font-size: 2rem;
+    }
+
+    .card-content h3 {
+      font-size: 2rem;
+      letter-spacing: 0.2rem;
+    }
+    
+    .column {
+      flex-basis: 100%;
+    }
+    
+    .card-content p {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+    }
+    
+    .card-content button {
+      margin-top: 1rem;
+      font-size: 1rem;
+    }
+
+    .card-content button:hover {
+      margin-top: 1rem;
+      font-size: 1rem;
+      background-color: #6B3A3B;
+      border-color: #fff;
+      color: #fff;
+    }
+  }
+  
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    .row {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .column {
+      flex-basis: 100%;
+      margin-bottom: 1.5rem;
+    }
+  
+    .card-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .card-content p {
+      margin-top: 1rem;
+      font-size: 1.5rem;
+    }
+  }
+
+  @media screen and (min-width: 769px) and (max-width: 980px) {
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    
+    .column {
+      flex-basis: calc(50% - 5px);
+      margin-bottom: 10px;
+  
+    }
+    
+    .card-content h3 {
+      font-size: 1.1rem;
+    }
+    
+    .card-content p {
+      font-size: 1rem;
+      margin-top: 3rem;
+    }
+
+    .card-content button {
+      margin-top: 2rem;
+      font-size: 1rem;
+    }
+
+    .card-content button:hover {
+      margin-top: 2rem;
+      font-size: 1rem;
+      background-color: #6B3A3B;
+      border-color: #fff;
+      color: #fff;
+    }
+  }
+  
+  @media screen and (min-width: 981px) and (max-width: 1200px) {
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    
+    .column {
+      flex-basis: calc(50% - 5px);
+      margin-bottom: 10px;
+    }
+    
+  
+    .card-content h3 {
+      font-size: 2rem;
+    }
+    
+    .card-content p {
+      font-size: 1.3rem;
+      margin-top: 3rem;
+    }
+    .card-content button {
+      margin-top: 2rem;
+      font-size: 1rem;
+    }
+    .card-content button:hover {
+      margin-top: 2rem;
+      font-size: 1rem;
+      background-color: #6B3A3B;
+      border-color: #fff;
+      color: #fff;
+    }
+    
+  }
+  

@@ -1,0 +1,51 @@
+<section class="hero" [ngClass]="{ 'expanded': isExpanded }">
+    <nav class="hero-nav" [ngClass]="{ 'expanded': isMenuOpen }">
+      <img id="logo" src="/assets/images/logora.png" alt="Logo">
+      <div class="hamburger-menu" (click)="toggleMenu()"><i class="fas fa-bars"></i></div> 
+      <ul class="nav-list" [ngClass]="{ 'show': isMenuOpen }">
+        <li><a routerLink="/" routerLinkActive="active">Početna</a></li>
+        <li><a routerLink="/usluge" routerLinkActive="active">Usluge</a></li>
+        <li><a routerLink="/portfolio" routerLinkActive="active">Portfolio</a></li>
+        <li><a routerLink="/o-nama" routerLinkActive="active">O nama</a></li>
+        <li><a routerLink="/kontakt" routerLinkActive="active">Kontakt</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <h1>Porfolio i projekti.</h1>
+     
+      
+    </div>
+  </section>
+  <section> <h2 id="naslov">Galerija</h2>
+ 
+  <div class="projekti-container">
+   
+  <div *ngFor="let projekat of projekti" class="projekat-thumbnail">
+    <h3>{{ projekat.naziv }}</h3>
+    <img [src]="projekat.slike[0]" alt="{{ projekat.naziv }}">
+    
+    <button (click)="prikaziSlike(projekat)">Prikaži album</button>
+
+    <div *ngIf="trenutniProjekat === projekat && prikaziSlikeProjekta" class="projekat-overlay">
+      <div class="projekat-overlay-content">
+        <span class="projekat-close" (click)="zatvoriOverlay()">&times;</span>
+        <div class="projekat-slider">
+          <div class="projekat-slide">
+            <img [src]="projekat.slike[trenutnaSlikaIndex]" alt="{{ projekat.naziv }}">
+          </div>
+          <a class="projekat-prev" (click)="prethodnaSlika()">&#10094;</a>
+          <a class="projekat-next" (click)="sledecaSlika()">&#10095;</a>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  </div>
+</section>
+
+  <app-section-footer></app-section-footer>
+
+  <button class="to-top-button" [class.show]="isScrolled" (click)="scrollToTop()" (mouseenter)="onNavigationHover()" (mouseleave)="onNavigationLeave()">
+    ▲
+  </button>
+  

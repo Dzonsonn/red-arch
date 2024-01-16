@@ -1,0 +1,39 @@
+<section class="hero" [ngClass]="{ 'expanded': isExpanded }">
+    <nav class="hero-nav">
+      <img id="logo" src="/assets/images/logora.png" alt="Logo">
+      <div class="hamburger-menu"  (click)="toggleMenu()"><i class="fas fa-bars"></i></div> 
+      <ul class="nav-list" [ngClass]="{ 'show': isMenuOpen }">
+        <li><a routerLink="/" routerLinkActive="active">Početna</a></li>
+        <li><a routerLink="/usluge" routerLinkActive="active">Usluge</a></li>
+        <li><a routerLink="/portfolio" routerLinkActive="active">Portfolio</a></li>
+        <li><a routerLink="/o-nama" routerLinkActive="active">O nama</a></li>
+        <li><a routerLink="/kontakt" routerLinkActive="active">Kontakt</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <h1>Arhitektura koja <br>nadmašuje granice.</h1>
+     
+      
+    </div>
+  </section>
+
+<app-prikaz-onama></app-prikaz-onama>
+  <section class="o-nama">
+    <h2 >Naš tim</h2>
+    <div class="o-nama-container">
+      <div class="o-nama-row">
+        <div class="o-nama-column" *ngFor="let clan of tim">
+          <div class="o-nama-card">
+            <img [src]="clan.slika" alt="Slika">
+            <h3>{{ clan.imePrezime }}</h3>
+            <p>{{ clan.zvanje }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <button class="to-top-button" [class.show]="isScrolled" (click)="scrollToTop()" (mouseenter)="onNavigationHover()" (mouseleave)="onNavigationLeave()">
+    ▲
+  </button>
+  
+<app-section-footer></app-section-footer>

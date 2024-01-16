@@ -1,0 +1,110 @@
+{
+    "projekti": [
+      {
+        "naziv": "Yakima, Washington, USA",
+        "slike": [
+          "/assets/images/amerika1/3.3.jpg",
+          "/assets/images/amerika1/1.png",
+          "/assets/images/amerika1/2.png",
+          "/assets/images/amerika1/3.png",
+          "/assets/images/amerika1/4.png"
+        ]
+      },
+      {
+        "naziv": "Alexandria, Virginia, USA",
+        "slike": [
+            "/assets/images/amerika2/3.jpg",
+            "/assets/images/amerika2/1.png",
+            "/assets/images/amerika2/2.png",
+            "/assets/images/amerika2/3.3.png",
+            "/assets/images/amerika2/4.png",
+            "/assets/images/amerika2/5.png"
+            
+        ]
+      },
+      {
+        "naziv": "BW Mangolija",
+        "slike": [
+            "/assets/images/BW.jpg",
+          "/assets/images/bw/1.png",
+          "/assets/images/bw/2.png",
+          "/assets/images/bw/3.png",
+          "/assets/images/bw/4.png",
+          "/assets/images/bw/5.png"
+        ]
+      },
+      {
+        "naziv": "Hleb i Kifle",
+        "slike": [
+          "/assets/images/HiK.jpg",
+          "/assets/images/hik/1.png",
+          "/assets/images/hik/2.png",
+          "/assets/images/hik/3.png",
+          "/assets/images/hik/3.3.png",
+          "/assets/images/hik/5.png",
+          "/assets/images/hik/7.png",
+          "/assets/images/hik/9.png"
+        ]
+      },
+      {
+        "naziv": "Kopaonik, vikend naselje",
+        "slike": [
+          "/assets/images/Kop.jpg",
+          "/assets/images/kopaonik/1.png",
+          "/assets/images/kopaonik/2.png",
+          "/assets/images/kopaonik/3.png",
+          "/assets/images/kopaonik/222.jpg"
+        ]
+      },
+      {
+        "naziv": "Privatna kuća Kosovksa Mitrovica",
+        "slike": [
+          "/assets/images/km/2.01.jpg",
+          "/assets/images/km/3.png",
+          "/assets/images/km/5.png",
+          "/assets/images/km/6.png",
+          "/assets/images/km/7.png"
+    
+        ]
+      },
+      {
+        "naziv": "Privatna kuća, Zvečan",
+        "slike": [
+          "/assets/images/Zv.jpg",
+          "/assets/images/zv/1.jpg",
+          "/assets/images/zv/2.jpg",
+          "/assets/images/zv/3.jpg",
+          "/assets/images/zv/4.jpg",
+          "/assets/images/zv/5.jpg"
+        
+        ]
+      },
+      {
+        "naziv": "Privatna kuća, Kolašin",
+        "slike": [
+          "/assets/images/kolasin/index.png",
+          "/assets/images/kolasin/1.png",
+          "/assets/images/kolasin/2.png",
+          "/assets/images/kolasin/3.png",
+          "/assets/images/kolasin/4.png"
+        
+        ]
+      },
+      {
+        "naziv": "Kupatilo",
+        "slike": [
+          "/assets/images/kupatilo/fass.png",
+          "/assets/images/kupatilo/1.png",
+          "/assets/images/kupatilo/2.png",
+          "/assets/images/kupatilo/3.png",
+          "/assets/images/kupatilo/4.png",
+          "/assets/images/kupatilo/5.png",
+          "/assets/images/kupatilo/6.png",
+          "/assets/images/kupatilo/7.png",
+          "/assets/images/kupatilo/8.png"
+          
+        ]
+      }
+    ]
+  }
+  

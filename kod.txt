@@ -1,0 +1,10 @@
+
+
+pomocni kod za karticu usluge 
+
+ width: 200px;
+    background-image: linear-gradient(#e5f3ff, #fff);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+----------------------------------------------------

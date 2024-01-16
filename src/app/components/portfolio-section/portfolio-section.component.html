@@ -1,0 +1,83 @@
+<section class="portfolio">
+  <h2>Portfolio / Projekti</h2>
+<div class="row">
+    <div class="column">
+      <div class="card">
+        <img [src]="projects[0].image" [alt]="projects[0].title">
+      </div>
+    </div>
+  
+    <div class="column" id="pr1">
+      <div class="card">
+        <div class="card-content">
+          <h3>{{ projects[0].title }}</h3>
+          <p>{{ projects[0].description }}</p>
+          <button (click)="  showMore()">DETALJNIJE</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="column"  id="pr2">
+        <div class="card">
+          <div class="card-content">
+            <h3>{{ projects[1].title }}</h3>
+            <p>{{ projects[1].description }}</p>
+            <button (click)="  showMore()">DETALJNIJE</button>
+          </div>
+        </div>
+        
+      </div>
+    <div class="column">
+      <div class="card">
+        <img [src]="projects[1].image" [alt]="projects[1].title">
+      </div>
+    </div>
+  
+   
+  </div>
+  
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img [src]="projects[2].image" [alt]="projects[2].title">
+      </div>
+    </div>
+  
+    <div class="column"  id="pr3">
+      <div class="card">
+        <div class="card-content">
+          <h3>{{ projects[2].title }}</h3>
+          <p>{{ projects[2].description }}</p>
+          <button (click)="  showMore()">DETALJNIJE</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  <div class="row">
+
+    <div class="column"  id="pr4">
+        <div class="card">
+          <div class="card-content">
+            <h3>{{ projects[3].title }}</h3>
+            <p>{{ projects[3].description }}</p>
+            <button (click)="  showMore()">DETALJNIJE</button>
+          </div>
+        </div>
+        
+      </div>
+      
+    <div class="column">
+      <div class="card">
+        <img [src]="projects[3].image" [alt]="projects[3].title">
+      </div>
+    </div>
+  
+   
+  </div>
+
+</section>

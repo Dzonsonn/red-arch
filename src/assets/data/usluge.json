@@ -1,0 +1,45 @@
+{
+    "usluge": [
+      {
+        "ime": "Projektovanje",
+        "paketi": [
+          { "naziv": "Rezidentalna arhitektura", "cena": 25 },
+          { "naziv": "Komercijalni objekat", "cena": 25 },
+          { "naziv": "Eksterijer ", "cena": 45 }
+        ]
+      },
+      {
+        "ime": "Idejni projekti",
+        "paketi": [
+          { "naziv": "izrada idejnog resenja (2d planovi)", "cena": 15 },
+          { "naziv": "merenje postojeceg stanja", "cena": 35 },
+          { "naziv": "projekat namestaja ", "cena": 45 }
+        ]
+      },
+      {
+      "ime": "Enterijer",
+        "paketi": [
+          { "naziv": "Kuća", "cena":  45 },
+          { "naziv": "Stan", "cena": 45 },
+          { "naziv": "Poslovni prostor", "cena": 45 }
+        ]
+      },
+      {
+        "ime": "Dizajn",
+          "paketi": [
+            { "naziv": "2d dizajn graf", "cena": 450 },
+            { "naziv": "3d diz(foto video)", "cena": 450 }
+           
+          ]
+        },
+        {
+            "ime": "Renderi",
+              "paketi": [
+                { "naziv": "eksterijer, enterijer: basic paket (2 slike osnovni 3d model, 1080px render, source file)", "cena": 80 },
+                { "naziv": "standard (5 slika, 3d, modelovani namestaj, 2160px source file, jedna revizija) ", "cena": 120 },
+                { "naziv": "premium (10 slika, 3d modelovanje 2160px, 2 revizije, 5 dana develiry, source file) ", "cena": 200 }
+              ]
+            }
+    ]
+  }
+  

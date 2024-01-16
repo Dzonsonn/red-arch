@@ -1,0 +1,105 @@
+<section class="hero"  [ngClass]="{ 'expanded': isExpanded }">
+  <nav class="hero-nav">
+    <img id="logo"  src="/assets/images/logora.png" alt="Logo">
+    <div  class="hamburger-menu"  (click)="toggleMenu()"><i class="fas fa-bars"></i></div> 
+    <ul class="nav-list" [ngClass]="{ 'show': isMenuOpen }">
+      <li><a routerLink="/" routerLinkActive="active">Početna</a></li>
+      <li><a routerLink="/usluge" routerLinkActive="active">Usluge</a></li>
+      <li><a routerLink="/portfolio" routerLinkActive="active">Portfolio</a></li>
+      <li><a routerLink="/o-nama" routerLinkActive="active">O nama</a></li>
+      <li><a routerLink="/kontakt" routerLinkActive="active">Kontakt</a></li>
+    </ul>
+  </nav>
+  <div class="hero-content">
+    <h1>Upoznajte naše usluge i <br> prilagodite vašim potrebama.</h1>
+   
+    
+  </div>
+</section>
+
+<div class="container">
+  <h2 class="section-title">Usluge Red Arch Studio</h2>
+  <div class="kartice">
+    <div class="kartica" *ngFor="let usluga of usluge; let i = index">
+      <div class="iUsluge">
+        <h3>{{ usluga.ime }}</h3>
+        <div class="slika">
+          <img [src]="services[i].image" [alt]="services[i].title">
+        </div>
+        <button (click)="izaberiUslugu(usluga)">Izaberi</button>
+      </div>
+    </div>
+  </div>
+  
+
+  <div *ngIf="izabranaUsluga" class="izUsluga">
+    <div class="izUsluga__slika-naslov">
+      <h4>Izabrana usluga: {{ izabranaUsluga.ime }}</h4>
+      <img [src]="getServiceImage(izabranaUsluga.ime)" [alt]="izabranaUsluga.ime" class="izabrana-slika">
+    </div>
+  
+    <div class="izUsluga__forma">
+      <form>
+        <!-- Polja za unos podataka -->
+        <div class="polje">
+          <label for="ime">Ime:</label>
+          <input type="text" id="ime" name="ime" [(ngModel)]="ime">
+        </div>
+        <div class="polje">
+          <label for="prezime">Prezime:</label>
+          <input type="text" id="prezime" name="prezime" [(ngModel)]="prezime">
+        </div>
+        <div class="polje">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="mail" [(ngModel)]="mail">
+        </div>
+        <div class="polje">
+          <label for="brojTelefona">Broj telefona:</label>
+          <input type="text" id="brojTelefona" name="brojTelefona" [(ngModel)]="brojTelefona">
+        </div>
+  
+        <!-- Dropdown za izbor paketa -->
+        <div class="polje">
+          <label for="izabraniPaket">Izaberi paket:</label>
+          <select id="izabraniPaket" [(ngModel)]="izabraniPaket" name="izabraniPaket" required>
+            <option *ngFor="let paket of izabranaUsluga.paketi" [value]="paket.naziv">{{ paket.naziv }}</option>
+          </select>
+        </div>
+
+       <!-- Polje za unos kvadrata -->
+<div *ngIf="izabranaUsluga && (izabranaUsluga.ime === 'Projektovanje' || izabranaUsluga.ime === 'Idejni projekti' || izabranaUsluga.ime === 'Enterijer')">
+  <label for="kvadrati">Unesite broj kvadrata:</label>
+  <input type="number" id="kvadrati" name="kvadrati" [(ngModel)]="kvadrati">
+</div>
+
+<!-- Polje za unos broja radova -->
+<div *ngIf="izabranaUsluga && izabranaUsluga.ime === 'Dizajn'">
+  <label for="brojRadova">Unesite broj radova:</label>
+  <input type="number" id="brojRadova" name="brojRadova" [(ngModel)]="brojRadova">
+</div>
+        
+  
+        <!-- Prikaz cene -->
+        <div class="polje" *ngIf="izabraniPaket">
+  <label for="cena">Cena:</label>
+  <input type="text" id="cena" name="cena" [value]="getCena() | currency :'EUR':'symbol-narrow'" readonly>
+  <span *ngIf="showCenaMessage()" class="error-message">
+    {{ getCenaMessage() }}
+  </span>
+</div>
+  
+        <!-- Dugme za slanje forme -->
+        <button class="posalji-button" (click)="posaljiFormu()">Pošalji</button>
+      </form>
+    </div>
+  </div>
+<app-section-footer></app-section-footer>
+<div id="porukaModal" class="modal">
+  <div class="modal-content">
+    <span class="close" (click)="zatvoriPoruku()">&times;</span>
+    <h5 >Uspešno ste kupili ovu uslugu. Neko iz tima ce vam se uskoro javiti!</h5>
+  </div>
+</div>
+<button class="to-top-button" [class.show]="isScrolled" (click)="scrollToTop()" (mouseenter)="onNavigationHover()" (mouseleave)="onNavigationLeave()">
+  ▲
+</button>

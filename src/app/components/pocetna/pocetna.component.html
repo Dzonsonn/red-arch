@@ -1,0 +1,27 @@
+
+<section class="hero" [ngClass]="{ 'expanded': isExpanded }">
+    <nav class="hero-nav " >
+      <img id="logo" (click)="navigateToHome()" src="/assets/images/logora.png" alt="Logo">
+      <div class="hamburger-menu"  (click)="toggleMenu()"><i class="fas fa-bars"></i></div> 
+      <ul class="nav-list" [ngClass]="{ 'show': isMenuOpen }">
+        <li><a routerLink="/pocetna" routerLinkActive="active">Početna</a></li>
+        <li><a routerLink="/usluge" routerLinkActive="active">Usluge</a></li>
+        <li><a routerLink="/portfolio" routerLinkActive="active">Portfolio</a></li>
+        <li><a routerLink="/o-nama" routerLinkActive="active">O nama</a></li>
+        <li><a routerLink="/kontakt" routerLinkActive="active">Kontakt</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <h1>Kreiramo prostor <br> koji inspiriše</h1>
+      <p>Nudimo kvalitetan dizajn i <br> projektovanje za svaki prostor i <br> svaku potrebu.</p>
+      
+    </div>
+  </section>
+  <app-usluge-section></app-usluge-section>
+<app-portfolio-section></app-portfolio-section>
+<app-onama-section></app-onama-section>
+<app-section-footer></app-section-footer>
+<button class="to-top-button" [class.show]="isScrolled" (click)="scrollToTop()" (mouseenter)="onNavigationHover()" (mouseleave)="onNavigationLeave()">
+  ▲
+</button>
+

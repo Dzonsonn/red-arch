@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Nunito+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ysabeau+SC:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Nunito+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:wght@300;400;500&display=swap');
+*{
+    box-sizing: border-box;
+  
+}
+
+body{
+    margin: 0;
+    padding: 0;
+
+    
+}

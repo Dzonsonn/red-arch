@@ -1,0 +1,12 @@
+<section class="services">
+    <h2 class="section-title">Usluge Red Arch Studio</h2>
+    <div class="service-cards">
+      <div class="service-card" *ngFor="let service of services">
+        <img [src]="service.image" [alt]="service.title">
+        <h3 class="service-title">{{ service.title }}</h3>
+        
+      </div>
+   
+    </div>   
+    <button (click)="showMore()" >Izaberite uslugu</button>
+  </section>

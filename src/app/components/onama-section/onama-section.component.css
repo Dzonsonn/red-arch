@@ -1,0 +1,153 @@
+.about-us {
+    margin-top: 6rem;
+   margin-bottom: 6rem;
+}
+
+.about-us h2 {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 5rem;
+  }
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#fff5e6, #fff);
+  }
+  
+  .column {
+    flex-basis: 50%;
+    padding: 0 10px;
+  }
+  
+  .description p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    text-align: justify;
+    font-family: 'Ysabeau SC', sans-serif;
+    font-weight: 400;
+    padding: 0;
+    color: #6B3A3B;
+  }
+  .description button {
+    margin-top: 3rem;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 2px solid #6B3A3B;
+    font-size: 1.5rem;
+    padding: 0.5rem 1.5625rem 0.5rem 1.5625rem;
+    letter-spacing: 4px;
+    line-height: 1.5rem;
+    color: #6B3A3B;
+  }
+  .description button:hover{
+    margin-top: 3rem;
+    text-transform: uppercase;
+    background-color: #6B3A3B;
+    border: 2px solid #fff;
+    font-size: 1.5rem;
+    padding: 0.5rem 1.5625rem 0.5rem 1.5625rem;
+    letter-spacing: 4px;
+    line-height: 1.5rem;
+    color: #fff;
+  }
+  .image img {
+    width: 100%;
+    height: auto;
+  }
+  
+
+  @media screen and (min-width: 375px) and (max-width: 480px) {
+    .row {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .column {
+      flex-basis: 100%;
+      margin-bottom: 2rem;
+    }
+  
+    .about-us h2 {
+      font-size: 2.5rem;
+    }
+  
+    .description p {
+      font-size: 1rem;
+    }
+    .description button {
+      margin-top: 2rem;
+      font-size: 1rem;
+      padding: 0.3rem 1rem;
+    }
+  }
+  
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    .row {
+      flex-direction: column;
+    }
+    
+    .column {
+      flex-basis: 100%;
+      margin-bottom: 1.5rem;
+    }
+    
+    .description p {
+      font-size: 1.4rem;
+    }
+    
+    .description button {
+      font-size: 1.2rem;
+      padding: 0.4rem 1.25rem;
+    }
+  }
+
+  @media screen and (min-width: 769px) and (max-width: 980px) {
+    .row {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .column {
+      flex-basis: 45%;
+      margin: 1rem;
+    }
+    
+    .description p {
+      font-size: 1.1rem;
+      
+    }
+    
+    .description button {
+      font-size: 1.5rem;
+      padding: 0.5rem 1.5625rem;
+    }
+  }
+  
+
+  @media screen and (min-width: 981px) and (max-width: 1200px) {
+    .row {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .column {
+      flex-basis: 45%;
+      margin: 1rem;
+    }
+    
+    .description p {
+      font-size: 1.6rem;
+    }
+    
+    .description button {
+      font-size: 1.5rem;
+      padding: 0.5rem 1.5625rem;
+    }
+  }
+  

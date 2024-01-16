@@ -1,0 +1,71 @@
+<section class="hero" [ngClass]="{ 'expanded': isExpanded }">
+    <nav class="hero-nav">
+      <img id="logo" src="/assets/images/logora.png" alt="Logo">
+      <div class="hamburger-menu"  (click)="toggleMenu()"><i class="fas fa-bars"></i></div> 
+      <ul class="nav-list" [ngClass]="{ 'show': isMenuOpen }">
+        <li><a routerLink="/pocetna" routerLinkActive="active">Početna</a></li>
+        <li><a routerLink="/usluge" routerLinkActive="active">Usluge</a></li>
+        <li><a routerLink="/portfolio" routerLinkActive="active">Portfolio</a></li>
+        <li><a routerLink="/o-nama" routerLinkActive="active">O nama</a></li>
+        <li><a routerLink="/kontakt" routerLinkActive="active">Kontakt</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <h1>Mi brinemo o vašem zadovoljstvu. <br> Kontaktirajte nas.</h1>
+     
+      
+    </div>
+  </section>
+
+  <section class="kontaktForm"> 
+    <h2 id="naslov">Kontak</h2>
+  <div class="contact-wrapper">
+   
+    <div class="map-column">
+        <h2>Lokacija</h2>
+        <div id="map" class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.4926813489187!2d20.517274875976394!3d44.8115266767493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7a67a16f99b9%3A0x60091871f8f8a764!2z0JzQsNGA0LjRmNCw0L3QtSDQk9GA0LXQs9C-0YDQsNC9IDEuINC_0YDQvtC70LDQtyA0LCDQkdC10L7Qs9GA0LDQtA!5e0!3m2!1ssr!2srs!4v1688295770344!5m2!1ssr!2srs" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    <div class="form-column">
+      <div class="contact-form">
+        <div id="porukaModal" class="modal">
+          <div class="modal-content">
+            <span class="close" (click)="zatvoriPoruku()">&times;</span>
+            <h5 >Uspešno ste poslali formu!</h5>
+          </div>
+        </div>
+        <h2>Kontaktirajte nas</h2>
+        <form #forma="ngForm" >
+          <div class="form-group">
+            <label for="ime">Ime:</label>
+            <input type="text" id="ime" name="ime" required [(ngModel)]="ime">
+          </div>
+          <div class="form-group">
+            <label for="prezime">Prezime:</label>
+            <input type="text" id="prezime" name="prezime" required [(ngModel)]="prezime">
+          </div>
+          <div class="form-group">
+            <label for="telefon">Broj telefona:</label>
+            <input type="text" id="telefon" name="telefon" required [(ngModel)]="brojTelefona">
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required [(ngModel)]="email">
+          </div>
+          <div class="form-group">
+            <label for="poruka">Poruka:</label>
+            <textarea id="poruka" name="poruka" required [(ngModel)]="poruka"></textarea>
+          </div>
+          <button type="submit" (click)="resetujFormu()">Pošalji</button>
+       
+        </form>
+        
+      </div>
+    </div>
+  </div>
+</section>
+<button class="to-top-button" [class.show]="isScrolled" (click)="scrollToTop()" (mouseenter)="onNavigationHover()" (mouseleave)="onNavigationLeave()">
+  ▲
+</button>
+<app-section-footer></app-section-footer>

@@ -1,0 +1,131 @@
+.services {
+    padding: 80px 0;
+    background-image: linear-gradient(#e5f3ff, #fff);
+    text-align: center;
+    min-width: 100%;
+  }
+  
+  .section-title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 5rem;
+  }
+  
+  .service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .service-card {
+    width: 200px;
+    background-image: linear-gradient(#e5f3ff, #fff);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-card img {
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .service-title {
+    font-family: 'Ysabeau SC', sans-serif;
+    font-weight:400 ;
+   
+    color: #6B3A3B;
+  }
+
+button {
+    margin-top: 3rem;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 2px solid #6B3A3B;
+    font-size: 1.5rem;
+    padding: 0.5rem 1.5625rem 0.5rem 1.5625rem;
+    letter-spacing: 4px;
+    line-height: 1.5rem;
+    color: #6B3A3B;
+  }
+ button:hover{
+    margin-top: 3rem;
+    text-transform: uppercase;
+    background-color: #6B3A3B;
+    border: 2px solid #fff;
+    font-size: 1.5rem;
+    padding: 0.5rem 1.5625rem 0.5rem 1.5625rem;
+    letter-spacing: 4px;
+    line-height: 1.5rem;
+    color: #fff;
+  }
+
+  @media screen and (max-width: 480px) {
+    .service-cards {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 0 10px;
+      box-sizing: border-box;
+    }
+    
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 3rem;
+    }
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+  .service-cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .service-card {
+    width: 45%;
+    margin-bottom: 30px;
+  }
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 980px) {
+  
+  
+  .service-cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .service-card {
+    width: 48%;
+    margin-bottom: 30px;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (min-width: 981px) and (max-width: 1200px) {
+  .service-cards {
+    justify-content: center;
+  }
+
+  .service-card {
+    width: 30%;
+  }
+
+  .section-title {
+    font-size: 2.8rem;
+    margin-bottom: 3rem;
+  }
+}
